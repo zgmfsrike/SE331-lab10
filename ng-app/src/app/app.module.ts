@@ -19,6 +19,9 @@ import { ListCourseComponent } from './course/list-course/list-course.component'
 import { CourseRoutingModule} from './course/course-routing.module';
 import {AddCourseComponent} from './course/add-course/add-course.component';
 import {CourseServerService} from './service/course-server.service';
+import { LoginComponent } from './login/login.component';
+import {AuthenticationService} from "./service/authentication/authentication.component";
+
 
 @NgModule({
   declarations: [AppComponent,
@@ -28,7 +31,9 @@ import {CourseServerService} from './service/course-server.service';
     MenuComponent, FileNotFoundComponent,
     CourseListComponent,
     ListCourseComponent,
-    AddCourseComponent],
+    AddCourseComponent,
+    LoginComponent,
+    AuthenticationService],
   imports: [BrowserModule, FormsModule, HttpModule,
     StudentRoutingModule, CourseRoutingModule, AppRoutingModule],
   bootstrap: [AppComponent],
